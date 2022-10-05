@@ -23,6 +23,8 @@ multiqc -o multiqc fastqc
 ```
 ![](https://github.com/DomnaVasil/hse22_hw1/blob/a792ec64f549e0f382af7aa475024498be1c84ec/images/multiqc1.jpg)
 ![](https://github.com/DomnaVasil/hse22_hw1/blob/a792ec64f549e0f382af7aa475024498be1c84ec/images/multiqc.png)
+![](https://github.com/DomnaVasil/hse22_hw1/blob/4b33b7dffc0f6a202f45a4f3c14b699439612b7c/images/M3.png)
+![](https://github.com/DomnaVasil/hse22_hw1/blob/4b33b7dffc0f6a202f45a4f3c14b699439612b7c/images/M4.png)
 #### 4. С помощью программ platanus_trim и platanus_internal_trim подрезала чтения по качеству и удалила адаптеры
 ```
 platanus_trim sub*
@@ -41,6 +43,8 @@ multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 ![](https://github.com/DomnaVasil/hse22_hw1/blob/a792ec64f549e0f382af7aa475024498be1c84ec/images/multiqc%20trimmed1.jpg)
 ![](https://github.com/DomnaVasil/hse22_hw1/blob/a792ec64f549e0f382af7aa475024498be1c84ec/images/multiqc%20trimmed.png)
+![](https://github.com/DomnaVasil/hse22_hw1/blob/4b33b7dffc0f6a202f45a4f3c14b699439612b7c/images/MT3.png)
+![](https://github.com/DomnaVasil/hse22_hw1/blob/4b33b7dffc0f6a202f45a4f3c14b699439612b7c/images/MT4.png)
 #### 6. С помощью программы “platanus assemble” собрала контиги из подрезанных чтений
 ```
 time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
