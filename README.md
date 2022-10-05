@@ -78,5 +78,5 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2
 ```
 rm sub*.trimmed matepairs*.int_trimmed
 ```
-#### Ссылка на код в Google collab: https://colab.research.google.com/drive/1k3R-UTD10A0bkmIlw6qxQDvwxasg2ZU1?usp=sharing
+### Ссылка на код в Google collab: https://colab.research.google.com/drive/1k3R-UTD10A0bkmIlw6qxQDvwxasg2ZU1?usp=sharing
 
