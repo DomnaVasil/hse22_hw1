@@ -49,15 +49,34 @@ multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
 ```
+#### Анализ контигов
+#### Общее количество контигов: 603
+#### Общая длина контигов: 3924391
+#### Длина самого длинного из контигов: 179307
+#### N50: 55038
+
 #### 7. С помощью программ “ platanus scaffold” собрала скаффолды из контигов, а также из подрезанных чтений
 ```
 time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matepairs1.fastq.int_trimmed matepairs2.fastq.int_trimmed 2> scaffold.log
 ```
+#### Анализ скаффолдов
+#### Общее количество скаффолдов: 71
+#### Общая длина скаффолдов: 3875863
+#### Длина самого длинного из скаффолдов: 3833957
+#### N50: 3833957
+#### Общая длина гэпов: 5670
+#### Число гэпов: 10
+
 #### 8. С помощью программы “platanus gap_close” уменьшила кол-во гэпов с помощью подрезанных чтений
 ```
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matepairs1.fastq.int_trimmed  matepairs2.fastq.int_trimmed 2> gapclose.log
 ```
+#### Общая длина гэпов для обрезанных чтений: 1749
+#### Число гэпов для обрезанных чтений: 10
+
 #### 9. Удалила подрезанные чтения
 ```
 rm sub*.trimmed matepairs*.int_trimmed
 ```
+#### Ссылка на код в Google collab: https://colab.research.google.com/drive/1k3R-UTD10A0bkmIlw6qxQDvwxasg2ZU1?usp=sharing
+
